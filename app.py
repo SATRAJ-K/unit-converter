@@ -27,6 +27,7 @@ if "logged_in" in st.session_state and st.session_state["logged_in"]:
     st.markdown("### Converts✨ length, ⚖️ weight, and ⏳ time instantly")
     st.write("❤️ Welcome! Select a category:")
 
+
     # --- Category Selection ---
     category = st.selectbox("Choose a category", ["Length", "Weight", "Time"])
 
@@ -75,4 +76,4 @@ if "logged_in" in st.session_state and st.session_state["logged_in"]:
         st.success(f"✅ The result is: {result:.4f}")
 
 else:
-    st.warning("🔴 Please login from the sidebar to access the Unit Converter.")p0
+    st.warning("🔴 Please login from the sidebar to access the Unit Converter.")
